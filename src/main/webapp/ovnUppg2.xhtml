@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Facelet Title</title>
+</h:head>
+<h:body>
+    This is CalcComplete!
+
+        <h:form>
+            <h:inputText id="i1" value="#{calcCompleteController.num1}"></h:inputText>
+            <h:inputText id="i2" value="#{calcCompleteController.num2}"></h:inputText>
+
+            <h:commandButton action="#{calcCompleteController.add()}" value="Addera"></h:commandButton>
+            <h:commandButton action="#{calcCompleteController.sub()}" value="Subtract"></h:commandButton>
+            <h:commandButton action="#{calcCompleteController.mult()}" value="Multiply"></h:commandButton>
+            <h:commandButton action="#{calcCompleteController.divide()}" value="Divide"></h:commandButton>
+            <br/>
+            <h:outputText id="o1" value="#{calcCompleteController.result}"></h:outputText>
+        </h:form>
+
+</h:body>
+</html>
